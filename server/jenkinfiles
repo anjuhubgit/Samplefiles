@@ -42,6 +42,14 @@ pipeline{
                 '''
             }
         }
+        stage('disc space'){
+            steps{
+                sh '''
+                echo "disk"
+                df -kh
+                '''
+            }
+        }
 
     }
 }

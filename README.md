@@ -1,4 +1,2 @@
-# Samplefiles
-#New files added
-#seoul
-#jinbuyon
+# CI-CD
+This is Simple ci-cd project

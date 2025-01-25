@@ -23,11 +23,8 @@ pipeline{
             }
             stage('Build and tag'){
                 steps{
-                    sh '''
-                        docker stop c1
-                        docker rm c1
-                        docker build -t anjuhubgit/puneet:1 .
-                        '''
+                    sh "docker build -t anjuhubgit/puneet:1 ."
+                        
                 }
             }
             stage('Docker Image scan'){
